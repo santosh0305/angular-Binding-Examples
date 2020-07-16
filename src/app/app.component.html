@@ -1,0 +1,26 @@
+<hello name="{{ name }}"></hello>
+<div>
+  <div>age : {{age}}</div>
+  
+  <div><input type="text" [value]=age (blur)=OnChange($event)></div>
+  
+  <div><img [src]=imageUrl alt="image to be shown here"></div>
+  
+  <div><input type="button" (click)=SaveUsers()></div>
+  
+  <div>Gender : 
+    <input type="radio">Male
+    <input type="radio">Female
+  </div>
+  
+  <div>
+    {{states}}
+    <ul>
+      <li *ngFor="let state of states">       
+        <a href={{state.name}}> 
+          {{state.id}}-{{state.name | lowercase}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
