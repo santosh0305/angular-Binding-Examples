@@ -9,7 +9,8 @@ export class AppComponent  {
   name = 'Angular ' + JSON.stringify(VERSION)
   age : number = 37
   imageUrl : string = "https://picsum.photos/seed/picsum/200/300"
-
+  imageHeight: string = "100"
+  imageWidth: string = "50"
   states = [
       {
         "id": 1,

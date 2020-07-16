@@ -4,7 +4,14 @@
   
   <div><input type="text" [value]=age (blur)=OnChange($event)></div>
   
-  <div><img [src]=imageUrl alt="image to be shown here"></div>
+  <div>
+    <img 
+    [src]=imageUrl 
+    alt="image to be shown here"
+    [height]=imageHeight
+    [width]=imageWidth
+    >    
+   </div>
   
   <div><input type="button" (click)=SaveUsers()></div>
   
