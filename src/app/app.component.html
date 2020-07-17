@@ -16,8 +16,12 @@
   <div><input type="button" (click)=SaveUsers()></div>
   
   <div>Gender : 
-    <input type="radio">Male
-    <input type="radio">Female
+    <div>
+      <input (click)=GetGender(1) name=gender type="radio" value=Male>Male
+    </div>
+    <div>
+      <input (click)=GetGender(2) name=gender type="radio" value=FeMale>Female
+      </div>
   </div>
   
   <div>

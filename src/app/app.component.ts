@@ -31,4 +31,14 @@ export class AppComponent  {
     console.log(event.target.value);
   }
 
+  GetGender(gender : any){
+    if(gender == 1){
+      console.log('selected male')
+    }
+    else{
+      console.log('selected Female')
+    }
+    console.log(gender)
+  }
+
 }
